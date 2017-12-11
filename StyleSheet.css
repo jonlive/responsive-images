@@ -21,19 +21,15 @@ ul {
     flex-direction: row;
 }
 
-
 img {
-    max-width: 90%;
-    transition: transform 0.5s ease-in-out;
+    width: 90%;
+    transition: transform 0.3s ease-in-out;
 }
 
 img:hover {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-box-shadow: 0 0 1px transparent;
-  }
+  -webkit-transform: skew(-10deg);
+  transform: skew(-10deg);
+}
 
 figcaption {
     text-align: center;
@@ -50,11 +46,7 @@ figcaption {
       -webkit-transform: scale(1.1) rotate(4deg);
       transform: scale(1.1) rotate(4deg);
     }
-    figcaption {
-        text-align: center;
-    }
 }
-
 
 @media screen and (min-width:1200px) {
 
@@ -66,11 +58,6 @@ figcaption {
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
       box-shadow: 10px 15px 7px #00a3cc;
-
-
     }
 
-    figcaption {
-        text-align: center;
-    }
 }
