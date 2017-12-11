@@ -1,2 +1,1 @@
 # responsive-images
-Responsive Images
