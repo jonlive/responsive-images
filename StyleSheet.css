@@ -1,0 +1,76 @@
+h1 {
+    text-align: center;
+    color: green;
+    font-family: 'Carter One', cursive, helvetica, arial, sans-serif;
+    font-size: 50px;
+    line-height: 1.6;
+}
+
+body {
+    background-color: #ccefff;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+
+img {
+    max-width: 90%;
+    transition: transform 0.5s ease-in-out;
+}
+
+img:hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+box-shadow: 0 0 1px transparent;
+  }
+
+figcaption {
+    text-align: center;
+}
+
+
+@media screen and (min-width:600px) {
+
+    li {
+        width: 50%;
+    }
+
+    img:hover {
+      -webkit-transform: scale(1.1) rotate(4deg);
+      transform: scale(1.1) rotate(4deg);
+    }
+    figcaption {
+        text-align: center;
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+
+    li {
+        width: 25%;
+    }
+
+    img:hover {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+      box-shadow: 10px 15px 7px #00a3cc;
+
+
+    }
+
+    figcaption {
+        text-align: center;
+    }
+}
